@@ -1,9 +1,12 @@
 ---
 layout: default
 title: "Gaming PC"
+parent: "Knowledge Base"
 ---
 
-Black Gaming PC $450-$550 
+# Gaming PC
+
+My current Windows 11 pc, hardly use it, I am a converted MacBook, Mac mini type of guy now.
 
 Intel® Core™ i3 processor 14100 12MB Cache, up to 4.70 GHz
 		https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html

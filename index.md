@@ -22,7 +22,6 @@ nav_order: 1
 - [michalferber.dev](https://michalferber.dev){: target="_blank" }
 - [michalferber.me](https://michalferber.me){: target="_blank" } ( [.com](https://michalferber.com){: target="_blank" }, [.net](https://michalferber.net){: target="_blank" }, [.org](https://michalferber.org){: target="_blank" }, [.us](https://michalferber.us){: target="_blank" } )
 
-
 ---
 - Document content maintained in [![Obsidian](https://img.shields.io/badge/Obsidian-%23483699.svg?&logo=obsidian&logoColor=white){: target="_blank" }](https://obsidian.md/)
 - Website hosted on [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-121013?logo=github&logoColor=white){: target="_blank" }](https://docs.github.com/en/pages)
@@ -30,5 +29,7 @@ nav_order: 1
 - See all of my public code [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white){: target="_blank" }](https://github.com/MichalAFerber/)
 - Find me on [![X](https://img.shields.io/badge/X-%23000000.svg?logo=X&logoColor=white){: target="_blank" }](https://x.com/MichalAFerber)
 - Videos hosted on [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white){: target="_blank" }](https://www.youtube.com/@MichalAFerber)
+
 ---
+
 <a href="https://www.buymeacoffee.com/TechGuyWithABeard" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
