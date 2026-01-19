@@ -23,7 +23,7 @@ nav_order: 1
 	- [park.ipcow.com](https://park.ipcow.com){: target="_blank" }
 - [kj4dia.me](https://kj4dia.me){: target="_blank" }
 - [michalferber.dev](https://michalferber.dev){: target="_blank" }
-- [michalferber.me](https://michalferber.me){: target="_blank" } ( [.com](https://michalferber.com){: target="_blank" }, [.dev](https://michalferber.dev){: target="_blank" }, [.net](https://michalferber.net){: target="_blank" }, [.org](https://michalferber.org){: target="_blank" }, [.us](https://michalferber.us){: target="_blank" } )
+- [michalferber.me](https://michalferber.me){: target="_blank" } ( [.com](https://michalferber.com){: target="_blank" }, [.net](https://michalferber.net){: target="_blank" }, [.org](https://michalferber.org){: target="_blank" }, [.us](https://michalferber.us){: target="_blank" } )
 
 
 ---
