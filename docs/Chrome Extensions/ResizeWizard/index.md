@@ -7,7 +7,7 @@ has_children: true
 
 # ResizeWizard
 
-[[https://ipcow.com](https://resizewizard.app/){: target="_blank" }]([https://ipcow.com](https://resizewizard.app/){: target="_blank" })
+[https://resizewizard.app/](https://resizewizard.app/){: target="_blank" }
 
 ## Quick, anchored window resizing with themes and sync.
 

@@ -5,21 +5,18 @@ has_children: true
 nav_order: 1
 ---
 
-# Michal Ferber | Dev Documentation
-
-## Applications
-
-- [GSA Manager](https://wiki.michalferber.me/Applications/GSA%20Manager/){: target="_blank" }
-- [ModMan](https://wiki.michalferber.me/Applications/ModMan/){: target="_blank" }
-## Websites
+# Michal Ferber's Dev Hub
+## My Websites
 
 - [elsanjose.com](https://elsanjose.com){: target="_blank" }
 - [ferber.me](https://ferber.me){: target="_blank" }
 - [grandfathershoney.com](https://grandfathershoney.com){: target="_blank" }
 - [gsamanager.org](https://gsamanager.org){: target="_blank" }
 - [ipcow.com](https://ipcow.com){: target="_blank" } ( [.org](https://ipcow.org){: target="_blank" }, [.us](https://ipcow.us){: target="_blank" } )
+	- [assets.ipcow.com](https://assets.ipcow.com){: target="_blank" }
 	- [checkip.ipcow.com](https://checkip.ipcow.com){: target="_blank" }
 	- [checkipv6.ipcow.com](https://checkipv6.ipcow.com){: target="_blank" }
+	- [geo.ipcow.com](https://geo.ipcow.com){: target="_blank" }
 	- [park.ipcow.com](https://park.ipcow.com){: target="_blank" }
 - [kj4dia.me](https://kj4dia.me){: target="_blank" }
 - [michalferber.dev](https://michalferber.dev){: target="_blank" }
