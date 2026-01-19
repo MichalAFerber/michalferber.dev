@@ -13,7 +13,9 @@ parent: "Knowledge Base"
 
 ## ⚙️ Should You Leave the Battery in the Tool?
 
-> **Best practice:** _Remove it when you’re done using the tool for the day._
+{: .note-title }
+> **Best practice**
+> Remove it when you’re done using the tool for the day._
 
 ### Why:
 
@@ -26,8 +28,8 @@ parent: "Knowledge Base"
 - 🧰 **Exception:**  
     If you’re actively using the tool multiple times during the same day, it’s fine to leave the battery seated between sessions.
 
-✅ **Rule of thumb:**
-
+{: .note-title }
+> ✅ **Rule of thumb:**
 > “Leave it in if you’ll use it again in the next few hours. Otherwise, pop it out.”
 
 ---
