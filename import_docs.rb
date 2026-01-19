@@ -227,7 +227,7 @@ files_to_process.each do |path|
         layout = "home"
       else
         # This is docs/index.md
-        title = "Docs" # Default title for /docs/
+        title = "Knowledge Base" # Default title for /docs/
         nav_order = 2
         layout = "default"
       end
@@ -259,7 +259,7 @@ files_to_process.each do |path|
        # If is_index is true: title=Applications. parent=nil (folders[-2] is nil).
        # So Applications is a top level item in the nav.
        # If we want it under "Knowledge Base", we set parent="Knowledge Base".
-       parent = "Docs"
+       parent = "Knowledge Base"
     end
   end
 
