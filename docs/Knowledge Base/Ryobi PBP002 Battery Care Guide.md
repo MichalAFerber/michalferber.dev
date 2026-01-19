@@ -15,6 +15,7 @@ parent: "Knowledge Base"
 
 {: .note-title }
 > **Best practice**
+> 
 > Remove it when you’re done using the tool for the day._
 
 ### Why:
@@ -30,6 +31,7 @@ parent: "Knowledge Base"
 
 {: .note-title }
 > ✅ **Rule of thumb:**
+> 
 > “Leave it in if you’ll use it again in the next few hours. Otherwise, pop it out.”
 
 ---

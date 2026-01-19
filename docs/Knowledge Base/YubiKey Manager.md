@@ -6,8 +6,8 @@ parent: "Knowledge Base"
 
 # YubiKey Manager
 
-{: .note }
-> Yubico announced that the **YubiKey Manager GUI (ykman GUI)** will reach **End of Life (EOL) in February 2026**.
+{: .highlight }
+> **Yubico** announced that the **YubiKey Manager GUI (ykman GUI)** will reach **End of Life (EOL) in February 2026**.
 
 That means:
 
