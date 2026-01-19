@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "YubiKey Manager"
-parent: "Dev Hub"
+parent: "Docs"
 ---
 
 # YubiKey Manager

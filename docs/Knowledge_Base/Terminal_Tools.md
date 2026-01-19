@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Terminal Tools"
-parent: "Dev Hub"
+parent: "Docs"
 ---
 
 # Terminal Tools

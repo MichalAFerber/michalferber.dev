@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Dev Hub"
+title: "Docs"
 has_children: true
 nav_order: 2
 ---
