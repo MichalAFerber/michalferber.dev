@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Gaming PC"
-parent: "Docs"
+parent: "Knowledge Base"
 ---
 
 # Gaming PC

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "YubiKey Manager"
-parent: "Docs"
+parent: "Knowledge Base"
 ---
 
 # YubiKey Manager

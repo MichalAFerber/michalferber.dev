@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Ryobi PBP002 Battery Care Guide"
-parent: "Docs"
+parent: "Knowledge Base"
 ---
 
 # Ryobi PBP002 Battery Care Guide
