@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Gaming PC"
-parent: "Knowledge Base"
+parent: "Dev Hub"
 ---
 
 # Gaming PC

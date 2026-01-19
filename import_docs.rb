@@ -52,7 +52,11 @@ end
 
 # 4. Generate Missing Index Files
 puts "--- Generating Missing Index Files ---"
-Dir.glob("#{DOCS_DIR}/**/*").select { |f| File.directory?(f) }.each do |dir|
+# Include DOCS_DIR itself to ensure docs/index.md exists (since we moved the original to ./index.md)
+directories = Dir.glob("#{DOCS_DIR}/**/*").select { |f| File.directory?(f) }
+directories << DOCS_DIR
+
+directories.uniq.each do |dir|
   index_path = File.join(dir, "index.md")
   unless File.exist?(index_path)
     folder_name = File.basename(dir)
@@ -216,10 +220,17 @@ files_to_process.each do |path|
   
   if is_index
     has_children = true
-    if folders.empty? # Root Home
-      title = "Home"
-      nav_order = 1
-      layout = "home"
+    if folders.empty? # Root Home or Docs Root
+      if path == ROOT_INDEX
+        title = "Home"
+        nav_order = 1
+        layout = "home"
+      else
+        # This is docs/index.md
+        title = "Dev Hub" # Default title for /docs/
+        nav_order = 2
+        layout = "default"
+      end
     else
       title = titleize(folders.last)
       parent = titleize(folders[-2]) if folders.length >= 2
@@ -228,6 +239,28 @@ files_to_process.each do |path|
   else
     parent = titleize(folders.last) if folders.length >= 1
     grand_parent = titleize(folders[-2]) if folders.length >= 2
+    
+    # Special handling for children of docs root
+    # If the parent is "docs" (which happens if it's in docs root), we might want to attach it to "Knowledge Base"
+    # But currently 'docs' is not in the 'folders' array if relative path is 'file.md'
+    # Wait, if file is docs/Applications/index.md
+    # relative: Applications/index.md
+    # folders: ["Applications"]
+    # parent: Applications.
+    # It doesn't have a grand parent.
+    # The parent of "Applications" is implicitly "Docs" (Knowledge Base).
+    # If we want it to show up in breadcrumbs under Knowledge Base, we need to set parent to Knowledge Base?
+    # But usually just-the-docs handles this via structure.
+    
+    # If we want top-level folders in docs/ to list "Knowledge Base" as parent:
+    if folders.length == 1
+       # e.g. folders=['Applications']
+       # parent is 'Applications' (for an index) or parent is 'Subject' (for a file)
+       # If is_index is true: title=Applications. parent=nil (folders[-2] is nil).
+       # So Applications is a top level item in the nav.
+       # If we want it under "Knowledge Base", we set parent="Knowledge Base".
+       parent = "Dev Hub"
+    end
   end
 
   # --- Write File ---
