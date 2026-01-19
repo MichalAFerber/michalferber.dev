@@ -6,10 +6,11 @@ parent: "Knowledge Base"
 
 # Gaming PC
 
-> [!NOTE]
-> My current Windows 11 pc, hardly use it, I am a converted MacBook, Mac mini type of guy now.
-> 
-> Corsair Intel i3 (14th Gen) Gaming PC, 32GB, 1TB, 480GB, Corsair Gaming Keyboard and Mouse
+{: .note }
+My current Windows 11 pc, hardly use it, I am a converted MacBook, Mac mini type of guy now.
+
+{: .note }
+Corsair Intel i3 (14th Gen) Gaming PC, 32GB, 1TB, 480GB, Corsair Gaming Keyboard and Mouse
 
 ## Parts List
 
