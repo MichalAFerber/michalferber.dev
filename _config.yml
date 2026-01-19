@@ -1,0 +1,64 @@
+title: Michal Ferber Dev Documentation
+description: A documentation website
+url: "https://michalferber.dev" # REQUIRED for sitemap and SEO
+
+remote_theme: just-the-docs/just-the-docs
+logo: "/assets/images/michalferber_logo.png"
+favicon_ico: "/assets/favicon/favicon.ico"
+author: Michal Ferber
+# Aux links for the upper right navigation
+aux_links:
+  "Blog":
+    - "//michalferber.com"
+  "GitHub":
+    - "//github.com/MichalAFerber"
+
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: true
+
+# Heading anchor links appear on hover over h1-h6 tags in page content
+# allowing users to deep link to a particular heading on a page.
+#
+# Supports true (default) or false
+heading_anchors: true
+
+# Footer last edited timestamp
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+
+# Footer "Edit this page on GitHub" link text
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "Edit this page on GitHub."
+gh_edit_repository: "https://github.com/MichalAFerber/michalferber.dev" # the github URL for your repo
+gh_edit_branch: "main" # the branch that your docs is served from
+# gh_edit_source: docs # the source that your files originate from
+gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+
+# Color scheme supports "light" (default) and "dark"
+color_scheme: dark
+
+# Google Analytics Tracking (optional)
+# Supports a CSV of tracking ID strings (eg. "UA-1234567-89,G-1AB234CDE5")
+ga_tracking: UA-2709176-10
+ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-include-cache
+  - jekyll-sitemap
+
+# Exclude build files and scripts
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - node_modules/
+  - import_docs.rb    # Add this line to prevent Jekyll from reading the ruby script
+
+# Theme settings
+# color_scheme: nil
+
+sass:
+  style: compressed
+  quiet: true
