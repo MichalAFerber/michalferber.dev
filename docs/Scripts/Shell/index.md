@@ -1,7 +1,8 @@
 ---
 layout: default
-title: "Scripts"
+title: "Shell"
+parent: "Scripts"
 has_children: true
 ---
 
-# Scripts
+# Shell

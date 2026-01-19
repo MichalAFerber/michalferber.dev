@@ -30,3 +30,5 @@ nav_order: 1
 - See all of my public code [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white){: target="_blank" }](https://github.com/MichalAFerber/)
 - Find me on [![X](https://img.shields.io/badge/X-%23000000.svg?logo=X&logoColor=white){: target="_blank" }](https://x.com/MichalAFerber)
 - Videos hosted on [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white){: target="_blank" }](https://www.youtube.com/@MichalAFerber)
+---
+<a href="https://www.buymeacoffee.com/TechGuyWithABeard" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>

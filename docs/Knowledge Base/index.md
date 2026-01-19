@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Scripts"
+title: "Knowledge Base"
 has_children: true
 ---
 
-# Scripts
+# Knowledge Base

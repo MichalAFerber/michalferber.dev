@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "CopyForm"
+title: "AutoMockup"
 parent: "Chrome Extensions"
 has_children: true
 ---
 
-# CopyForm
+# AutoMockup

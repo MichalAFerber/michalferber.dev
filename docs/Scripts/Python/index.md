@@ -1,7 +1,8 @@
 ---
 layout: default
-title: "Scripts"
+title: "Python"
+parent: "Scripts"
 has_children: true
 ---
 
-# Scripts
+# Python

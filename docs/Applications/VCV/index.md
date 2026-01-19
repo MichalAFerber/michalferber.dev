@@ -1,7 +1,8 @@
 ---
 layout: default
-title: "Scripts"
+title: "VCV"
+parent: "Applications"
 has_children: true
 ---
 
-# Scripts
+# VCV
