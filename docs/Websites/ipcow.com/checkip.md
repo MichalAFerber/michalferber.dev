@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "IPv4 & IPv6 Address Checker"
-parent: "IP Cow"
+parent: "ipcow.com"
 grand_parent: "Websites"
 ---
 

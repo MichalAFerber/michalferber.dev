@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "IP Cow"
-parent: "IP Cow"
+title: "About IP Cow"
+parent: "ipcow.com"
 grand_parent: "Websites"
 ---
 
-# IP Cow
+# About IP Cow
 
 *What is my IP Address?*
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "ipcow-assets"
-parent: "IP Cow"
+parent: "ipcow.com"
 grand_parent: "Websites"
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "IP Cow"
+title: "ipcow.com"
 parent: "Websites"
 has_children: true
 ---

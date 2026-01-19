@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "IP Cow — Domain Parking Template"
-parent: "IP Cow"
+parent: "ipcow.com"
 grand_parent: "Websites"
 ---
 
