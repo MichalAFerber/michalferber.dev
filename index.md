@@ -5,7 +5,7 @@ has_children: true
 nav_order: 1
 ---
 
-# Michal Ferber Apps, Websites, Scripts
+# Michal Ferber | Dev Documentation
 
 ## Applications
 
