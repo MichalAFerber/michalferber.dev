@@ -14,11 +14,11 @@ parent: "Knowledge Base"
 ## Parts List
 
 - Intel® Core™ i3 processor 14100 12MB Cache, up to 4.70 GHz
-	- [https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html](/assets/attachments/)
+	- [https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html](https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html){: target="_blank" }
 - MSI PRO B760-P WIFI DDR4
-	- [https://www.msi.com/Motherboard/PRO-B760-P-WIFI-DDR4/Specification](/assets/attachments/)
+	- [https://www.msi.com/Motherboard/PRO-B760-P-WIFI-DDR4/Specification](https://www.msi.com/Motherboard/PRO-B760-P-WIFI-DDR4/Specification){: target="_blank" }
 - Corsair 3000D AIRFLOW Mid-Tower PC Case - Black
-	- [https://www.corsair.com/us/en/p/pc-cases/cc-9011251-ww/3000d-tempered-glass-mid-tower-black-cc-9011251-ww](/assets/attachments/)
+	- [https://www.corsair.com/us/en/p/pc-cases/cc-9011251-ww/3000d-tempered-glass-mid-tower-black-cc-9011251-ww](https://www.corsair.com/us/en/p/pc-cases/cc-9011251-ww/3000d-tempered-glass-mid-tower-black-cc-9011251-ww){: target="_blank" }
 - Corsair RM750x Shift Fully Modular ATX Power Supply
 - Corsair 120MM Case Fans qty 5
 - Corsair Vengeance DDR5 RAM 32GB (2x16GB) 6000MHz 
