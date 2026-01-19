@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "start.mykk.us"
-parent: "Websites"
-has_children: true
+title: "start.mykk.us 🚀"
+parent: "mykk.us"
+grand_parent: "Websites"
 ---
 
 # start.mykk.us 🚀

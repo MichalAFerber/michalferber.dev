@@ -62,6 +62,26 @@ Dir.glob("#{DOCS_DIR}/**/*").select { |f| File.directory?(f) }.each do |dir|
   end
 end
 
+# 4.5 Sanitize Filenames (Spaces -> Underscores)
+puts "--- Sanitizing Filenames ---"
+paths_to_process = []
+Find.find(DOCS_DIR) do |path|
+  if File.basename(path).include?(" ")
+    paths_to_process << path
+  end
+end
+
+# Sort by length descending to rename deepest first
+paths_to_process.sort_by { |p| -p.length }.each do |path|
+  next unless File.exist?(path) 
+  dir = File.dirname(path)
+  base = File.basename(path)
+  new_base = base.gsub(" ", "_")
+  new_path = File.join(dir, new_base)
+  File.rename(path, new_path)
+  puts "Renamed: #{base} -> #{new_base}"
+end
+
 # 5. Process Content & Attachments
 puts "\n--- Processing Content ---"
 
@@ -85,13 +105,14 @@ files_to_process.each do |path|
   is_index = filename.downcase == "index"
   content = File.read(path)
 
-  # --- Attachment Processing ---
+  # --- Attachment & Link Processing ---
 
   content.gsub!(/(!?\[\[(.*?)\]\])|(!?\[(.*?)\]\((.*?)\))/) do |match|
     replacement = match
     file_name = nil
     alt_text = ""
     is_embed = false
+    raw_link_info = nil
 
     if match.start_with?('![[') || match.start_with?('[[')
       # Wiki Link
@@ -100,6 +121,7 @@ files_to_process.each do |path|
       raw_path, alt = inner.split('|')
       file_name = File.basename(raw_path.strip)
       alt_text = alt || file_name
+      raw_link_info = { type: :wiki, path: raw_path, alt: alt }
     elsif match =~ /!\[.*\]\(.*\)/ || match =~ /\[.*\]\(.*\)/
       # Standard Link
       is_embed = match.start_with?('!')
@@ -107,31 +129,56 @@ files_to_process.each do |path|
         alt_text = $1
         link_path = $2
         
-        # Skip http/https links here (we handle them below)
-        if link_path =~ /^http/
-          next match
+        # Skip http/https links here (we handle them below/later)
+        if link_path !~ /^http/
+          file_name = File.basename(link_path)
         end
-        file_name = File.basename(link_path)
+        raw_link_info = { type: :standard, path: link_path, alt: alt_text }
       end
     end
 
+    is_attachment = false
     if file_name
       file_name = file_name.strip
       source_attachment = File.join(OBSIDIAN_ATTACHMENTS_DIR, file_name)
       
       if File.exist?(source_attachment)
-        dest_attachment = File.join(ASSETS_ATTACHMENTS_DIR, file_name)
+        is_attachment = true
+        # Sanitize spaces to underscores for destination
+        sanitized_name = file_name.gsub(" ", "_")
+        dest_attachment = File.join(ASSETS_ATTACHMENTS_DIR, sanitized_name)
+        
         FileUtils.cp(source_attachment, dest_attachment) unless File.exist?(dest_attachment)
-        new_url = "/assets/attachments/#{URI.encode_www_form_component(file_name)}"
+        # URL uses sanitized name
+        new_url = "/assets/attachments/#{sanitized_name}"
         
         if is_embed
           replacement = "![#{alt_text}](#{new_url})"
         else
           replacement = "[#{alt_text}](#{new_url})"
         end
-        puts "  -> Linked Attachment: #{file_name}"
+        puts "  -> Linked Attachment: #{file_name} -> #{sanitized_name}"
       end
     end
+
+    # If NOT an attachment, sanitize spaces in local links
+    if !is_attachment && raw_link_info
+       target_path = raw_link_info[:path]
+       # Skip absolute URLs
+       unless target_path =~ /^[a-z]+:/i
+          if target_path.include?(" ") || target_path.include?("%20")
+             new_path = target_path.gsub(" ", "_").gsub("%20", "_")
+             
+             if raw_link_info[:type] == :wiki
+                alt_part = raw_link_info[:alt] ? "|#{raw_link_info[:alt]}" : ""
+                replacement = "#{is_embed ? '!' : ''}[[#{new_path}#{alt_part}]]"
+             else
+                replacement = "#{is_embed ? '!' : ''}[#{raw_link_info[:alt]}](#{new_path})"
+             end
+          end
+       end
+    end
+
     replacement
   end
 

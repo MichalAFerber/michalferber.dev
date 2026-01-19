@@ -21,6 +21,8 @@ nav_order: 1
 - [kj4dia.me](https://kj4dia.me){: target="_blank" }
 - [michalferber.dev](https://michalferber.dev){: target="_blank" }
 - [michalferber.me](https://michalferber.me){: target="_blank" } ( [.com](https://michalferber.com){: target="_blank" }, [.net](https://michalferber.net){: target="_blank" }, [.org](https://michalferber.org){: target="_blank" }, [.us](https://michalferber.us){: target="_blank" } )
+- [mykk.us](https://mykk.us){: target="_blank" }
+	- [start.mykk.us](https://start.mykk.us){: target="_blank" }
 
 ---
 - Document content maintained in [![Obsidian](https://img.shields.io/badge/Obsidian-%23483699.svg?&logo=obsidian&logoColor=white){: target="_blank" }](https://obsidian.md/)
