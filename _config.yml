@@ -1,11 +1,11 @@
-title: "Michal Ferber | Dev Documentation"
-description: A documentation website
+title: "Michal Ferber's Dev Hub"
+description: "A central place for all my technical documentation and project logs."
 url: "https://michalferber.dev" # REQUIRED for sitemap and SEO
-
 remote_theme: just-the-docs/just-the-docs
 logo: "/assets/images/michalferber_logo.png"
 favicon_ico: "/assets/favicon/favicon.ico"
 author: Michal Ferber
+
 # Aux links for the upper right navigation
 aux_links:
   "Blog":
@@ -15,11 +15,6 @@ aux_links:
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
-
-# Heading anchor links appear on hover over h1-h6 tags in page content
-# allowing users to deep link to a particular heading on a page.
-#
-# Supports true (default) or false
 heading_anchors: true
 
 # Footer last edited timestamp
