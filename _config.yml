@@ -39,7 +39,7 @@ color_scheme: dark
 
 # Google Analytics Tracking (optional)
 # Supports a CSV of tracking ID strings (eg. "UA-1234567-89,G-1AB234CDE5")
-ga_tracking: UA-2709176-10
+ga_tracking: G-YSZHX35LMK
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
 
 plugins:
@@ -55,6 +55,10 @@ exclude:
   - vendor/
   - node_modules/
   - import_docs.rb    # Add this line to prevent Jekyll from reading the ruby script
+
+# Force inclusion of files/folders that start with a dot
+include:
+  - .well-known
 
 # Theme settings
 # color_scheme: nil
