@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "🔑 YubiKey Manager"
+title: "YubiKey Manager"
 parent: "Knowledge Base"
 ---
 
-# 🔑 YubiKey Manager
+# YubiKey Manager
 
 Yubico announced that the **YubiKey Manager GUI (ykman GUI)** will reach **End of Life (EOL) in February 2026**.
 

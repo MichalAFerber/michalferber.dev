@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "🔋 **Ryobi PBP002 Battery Care Guide**"
+title: "Ryobi PBP002 Battery Care Guide"
 parent: "Knowledge Base"
 ---
 
-# 🔋 **Ryobi PBP002 Battery Care Guide**
+# Ryobi PBP002 Battery Care Guide
 
 **For: 18 V ONE+ 1.5 Ah (PBP002)**  
 **Applies to: Any Ryobi 18 V lithium pack, especially small-capacity ones used often**
