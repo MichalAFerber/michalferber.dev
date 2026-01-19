@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "ipcow-assets"
+title: "IP Cow Assets CDN"
 parent: "ipcow.com"
 grand_parent: "Websites"
 ---
 
-# ipcow-assets
+# IP Cow Assets CDN
 
 This repository serves as the central storage for static assets used across the [IP Cow](https://ipcow.com){: target="_blank" } ecosystem. It hosts stylesheets, scripts, fonts, and images that are consumed by the main website and associated services.
 

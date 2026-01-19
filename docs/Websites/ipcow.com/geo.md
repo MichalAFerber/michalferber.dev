@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "ipcow-geo-proxy"
+title: "IP Cow Geo Proxy"
 parent: "ipcow.com"
 grand_parent: "Websites"
 ---
 
-# ipcow-geo-proxy
+# IP Cow Geo Proxy
 
 A Cloudflare Worker that acts as a secure proxy for the [ipstack](https://ipstack.com/){: target="_blank" } API. This service helps power the geolocation features of [ipcow.com](https://ipcow.com){: target="_blank" } by hiding the API key and providing CORS support.
 
