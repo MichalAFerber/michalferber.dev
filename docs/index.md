@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Knowledge Base"
+title: "Docs"
 has_children: true
 nav_order: 2
 ---

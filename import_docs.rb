@@ -227,7 +227,7 @@ files_to_process.each do |path|
         layout = "home"
       else
         # This is docs/index.md
-        title = "Knowledge Base" # Default title for /docs/
+        title = "Docs" # Default title for /docs/
         nav_order = 2
         layout = "default"
       end
@@ -252,14 +252,14 @@ files_to_process.each do |path|
     # If we want it to show up in breadcrumbs under Knowledge Base, we need to set parent to Knowledge Base?
     # But usually just-the-docs handles this via structure.
     
-    # If we want top-level folders in docs/ to list "Knowledge Base" as parent:
-    if folders.length == 1
+    # If we want top-level folders in docs/ to list "Docs" as parent:
+    if is_index && folders.length == 1
        # e.g. folders=['Applications']
        # parent is 'Applications' (for an index) or parent is 'Subject' (for a file)
        # If is_index is true: title=Applications. parent=nil (folders[-2] is nil).
        # So Applications is a top level item in the nav.
-       # If we want it under "Knowledge Base", we set parent="Knowledge Base".
-       parent = "Knowledge Base"
+       # If we want it under "Docs", we set parent="Docs".
+       parent = "Docs"
     end
   end
 
