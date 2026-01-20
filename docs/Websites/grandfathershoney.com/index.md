@@ -5,4 +5,3 @@ parent: "Websites"
 has_children: true
 ---
 
-# grandfathershoney.com
