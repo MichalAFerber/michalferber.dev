@@ -5,11 +5,16 @@ parent: "Websites"
 has_children: true
 ---
 
-# Michal Ferber's Documentation Site
+# Michal Ferber's Dev Hub
 
-This repository creates a static documentation site using [Jekyll](https://jekyllrb.com/){: target="_blank" } and the [Just the Docs](https://just-the-docs.com/){: target="_blank" } theme. It serves as a central hub for my applications, websites, and scripts.
+<img src="https://raw.githubusercontent.com/MichalAFerber/michalferber.dev/main/assets/images/michalferber_logo.png" align="right" width="128" alt="Michal Ferber Logo">
+
+[![Deploy Jekyll site to Pages](https://github.com/MichalAFerber/michalferber.dev/actions/workflows/jekyll.yml/badge.svg){: target="_blank" }](https://github.com/MichalAFerber/michalferber.dev/actions/workflows/jekyll.yml)
+
+This repository creates a static documentation site using [Jekyll](https://jekyllrb.com/){: target="_blank" } and the [Just the Docs](https://just-the-docs.com/){: target="_blank" } theme. It serves as a central hub for all my technical documentation, project logs, applications, websites, and scripts.
 
 **Live Site:** [michalferber.dev](https://michalferber.dev){: target="_blank" }
+**Author:** Michal Ferber, aka TechGuyWithABeard
 
 ## 🚀 Features
 
@@ -52,15 +57,29 @@ This script will:
 - Inject necessary Frontmatter (titles, layout, parent/child relationships).
 - Move the root index to the project root.
 
+## Configuration
+
+The site is configured via `_config.yml` with the following key settings:
+- **Theme:** `just-the-docs` (via `jekyll-remote-theme`)
+- **Color Scheme:** Dark mode enabled
+- **Plugins:**
+  - `jekyll-seo-tag`
+  - `jekyll-sitemap`
+  - `jekyll-include-cache`
+
 ### Running Locally
 
-To preview the site:
+To run this site locally:
 
 ```bash
-bundle exec jekyll serve
-```
+# Install dependencies
+bundle install
 
-Open your browser to http://127.0.0.1:4000.
+# Serve the site locally
+bundle exec jekyll serve
+
+# The site will be available at http://localhost:4000
+```
 
 ## 📦 Deployment
 
@@ -68,6 +87,10 @@ This site is deployed to **GitHub Pages** automatically whenever changes are pus
 
 - **Workflow**: `.github/workflows/jekyll.yml`
 - **Source**: Static files built from this repo.
+
+## Theme
+
+Built with [Just the Docs](https://just-the-docs.com/){: target="_blank" } - A modern, high-performance Jekyll theme for documentation.
 
 ## 📝 License
 

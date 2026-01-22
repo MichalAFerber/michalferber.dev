@@ -107,4 +107,4 @@ This website includes:
 
 ## 📝 [License](LICENSE)
 
-Hosted by Michal Ferber, aka TechGuyWithABeard
+Created by Michal Ferber, aka TechGuyWithABeard
