@@ -15,5 +15,3 @@ gem "base64"
 gem "mutex_m"
 
 gem "jekyll-sass-converter", "~> 3.0"
-
-
